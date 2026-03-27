@@ -7,7 +7,7 @@ function resistores(){
             faixa1 = prompt("Qual é a cor da primeira faixa?\nPreto\nMarrom\nVermelho\nLaranja\nAmarelo\nVerde\nAzul\nVioleta\nCinza\nBranco").toLowerCase();
             faixa2 = prompt("Qual é a cor da segunda faixa?\nPreto\nMarrom\nVermelho\nLaranja\nAmarelo\nVerde\nAzul\nVioleta\nCinza\nBranco").toLowerCase();
             faixaMulti = prompt("Qual é a cor da faixa do multiplicador?\nPrata\nOuro\nPreto\nMarrom\nVermelho\nLaranja\nAmarelo\nVerde\nAzul\nVioleta\nCinza\nBranco").toLowerCase();
-            faixaTolerancia = prompt("Qual é a cor da faixa de tolerância?\nPrata\nOuro\nMarrom\nVermelho\nBranco").toLowerCase();
+            faixaTolerancia = prompt("Qual é a cor da faixa de tolerância?\nPrata\nOuro\nMarrom\nVermelho\nBranco\nVioleta\nAzul\nVerde").toLowerCase();
 
             if(faixa1 == "preto"){
                 faixa1 = 0;
@@ -95,6 +95,12 @@ function resistores(){
                 faixaTolerancia = 10;
             }else if(faixaTolerancia == "branco"){
                 faixaTolerancia = 20;
+            }else if(faixaTolerancia == "verde"){
+                faixaTolerancia = 0.5;
+            }else if(faixaTolerancia == "azul"){
+                faixaTolerancia = 0.25;
+            }else if(violeta == "violeta"){
+                faixaTolerancia = 0.1;
             }else{
                 console.log("Cor inválida inserida na faixa de tolerância!");
             }
@@ -105,10 +111,10 @@ function resistores(){
             break;
         case 2:
             faixa1 = prompt("Qual é a cor da primeira faixa?\nPreto\nMarrom\nVermelho\nLaranja\nAmarelo\nVerde\nAzul\nVioleta\nCinza\nBranco").toLowerCase();
-            faixa2 = prompt("Qual é a cor da primeira faixa?\nPreto\nMarrom\nVermelho\nLaranja\nAmarelo\nVerde\nAzul\nVioleta\nCinza\nBranco").toLowerCase();
-            faixa3 = prompt("Qual é a cor da primeira faixa?\nPreto\nMarrom\nVermelho\nLaranja\nAmarelo\nVerde\nAzul\nVioleta\nCinza\nBranco").toLowerCase();
+            faixa2 = prompt("Qual é a cor da segunda faixa?\nPreto\nMarrom\nVermelho\nLaranja\nAmarelo\nVerde\nAzul\nVioleta\nCinza\nBranco").toLowerCase();
+            faixa3 = prompt("Qual é a cor da terceira faixa?\nPreto\nMarrom\nVermelho\nLaranja\nAmarelo\nVerde\nAzul\nVioleta\nCinza\nBranco").toLowerCase();
             faixaMulti = prompt("Qual é a cor da faixa do multiplicador?\nPrata\nOuro\nPreto\nMarrom\nVermelho\nLaranja\nAmarelo\nVerde\nAzul\nVioleta\nCinza\nBranco").toLowerCase();
-            faixaTolerancia = prompt("Qual é a cor da faixa de tolerância?\nPrata\nOuro\nMarrom\nVermelho\nBranco").toLowerCase();
+            faixaTolerancia = prompt("Qual é a cor da faixa de tolerância?\nPrata\nOuro\nMarrom\nVermelho\nBranco\nVioleta\nAzul\nVerde").toLowerCase();
 
             if(faixa1 == "preto"){
                 faixa1 = 0;
@@ -220,6 +226,12 @@ function resistores(){
                 faixaTolerancia = 10;
             }else if(faixaTolerancia == "branco"){
                 faixaTolerancia = 20;
+            }else if(faixaTolerancia == "verde"){
+                faixaTolerancia = 0.5;
+            }else if(faixaTolerancia == "azul"){
+                faixaTolerancia = 0.25;
+            }else if(violeta == "violeta"){
+                faixaTolerancia = 0.1;
             }else{
                 console.log("Cor inválida inserida na faixa de tolerância!");
             }
